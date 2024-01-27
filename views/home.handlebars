@@ -1,3 +1,46 @@
-<div>
-    <h1>Chat</h1>
+<div class="bg-slate-300">
+
+    <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
+        <div class="w-full pl-2 pr-2 mb-4 mt-4">
+            <h1 class="text-3xl font-extrabold text-center"> MultiChat</h1>
+        </div>
+    </div>
+
+
+    <div id="box">
+
+    </div>
+
+    <div>
+        <div class="container ml-auto mr-auto flex items-center justify-center">
+            <div class="w-full md:w-1/2">
+                {{!----- caja ------}}
+                <div id="box" class="bg-white min-h-96 shadow appearance-none border rounded w-full py-1 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+
+                </div>
+
+                {{!-- formul --}}
+                <form onsubmit="" class="grid grid-cols-9 gap-4 mb-4 mt-3">
+                    <div class="col-start-1 col-end-2">
+                        <label for="name" class="block mb-2"></label>
+                        <input placeholder="Nombre" type="text" id="name" name="name"
+                            class="shadow appearance-none border rounded w-full py-2 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            required>
+                    </div>
+                    <div class="col-start-2 col-span-7 mb-4">
+                        <label class="block mb-2" for="mensaje"></label>
+                        <textarea
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="mensaje" rows="1" placeholder="El mensaje" required></textarea>
+                    </div>
+                    <div class="col-end-10 col-span-1 mb-4">
+                        <button
+                            class="bg-blue-700 hover:bg-blue-900 text-white font-bold mt-2 py-2 px-3 rounded focus:outline-none focus:shadow-outline"
+                            type="submit"> Enviar </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </div>
