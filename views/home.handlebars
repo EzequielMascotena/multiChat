@@ -6,21 +6,16 @@
         </div>
     </div>
 
-
-    <div id="box">
-
-    </div>
-
     <div>
         <div class="container ml-auto mr-auto flex items-center justify-center">
             <div class="w-full md:w-1/2">
                 {{!----- caja ------}}
-                <div id="box" class="bg-white min-h-96 shadow appearance-none border rounded w-full py-1 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <div id="box" class="box bg-white min-h-96 shadow appearance-none border rounded w-full py-1 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
 
                 </div>
 
                 {{!-- formul --}}
-                <form onsubmit="" class="grid grid-cols-9 gap-4 mb-4 mt-3">
+                <form onsubmit="return addMsg()" class="grid grid-cols-9 gap-4 mb-4 mt-3">
                     <div class="col-start-1 col-end-2">
                         <label for="name" class="block mb-2"></label>
                         <input placeholder="Nombre" type="text" id="name" name="name"
@@ -44,3 +39,7 @@
     </div>
 
 </div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
